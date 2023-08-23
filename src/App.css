@@ -1,0 +1,590 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.cardHighlight {
+  min-height: 100%;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.bg-image {
+  position: relative;
+  background-image: url("./images/pexels-karolina-grabowska-4202329.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: lightgray;
+  width: 100%;
+  height: 100vh;
+  flex-shrink: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content h1 {
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.content h2 {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.content p {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.shop-now-button {
+  color: black !important;
+  background-color: whitesmoke !important;
+  border-color: black !important;
+}
+
+.navBar {
+  background-color: rgb(228, 228, 228);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  position: sticky;
+  top: 0;
+
+  padding: 2px !important;
+}
+.footing {
+  background-color: rgb(228, 228, 228);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.brand {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 50px;
+  margin-left: 200px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .brand {
+    flex-grow: 0;
+  }
+}
+
+.custom-margin {
+  margin-left: 10px;
+}
+
+.custom-margin1 {
+  margin-right: 10px;
+}
+
+.grab-yours {
+  background-color: rgb(228, 228, 228);
+  width: 93.6%;
+  padding: 3px;
+  justify-content: center;
+  align-content: center;
+  height: 30px;
+  margin-left: 14px;
+  margin-bottom: 7px;
+  font-weight: bolder !important;
+}
+
+.carousel-img1 {
+  background-image: url("./images/pexels-karolina-grabowska-8361526.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: lightgray;
+  width: 100%;
+  height: 86.4vh;
+  flex-shrink: 0;
+}
+.carousel-img2 {
+  background-image: url("./images/pexels-anis-salmani-11711819.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: lightgray;
+  width: 100%;
+  height: 86.4vh;
+  flex-shrink: 0;
+}
+
+.carousel-content {
+  width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  padding-top: 280px;
+  padding-left: 80px;
+}
+
+.carousel-title {
+  color: rgb(24, 24, 24);
+}
+.carousel-h1 {
+  font-size: 50px;
+  margin-top: -10px;
+  line-height: 0.8;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.discount-text {
+  color: rgb(74, 255, 186);
+}
+
+.carousel-button {
+  background-color: black !important;
+  color: white;
+  border-color: rgb(88, 88, 88) !important;
+}
+
+.best-seller-title {
+  border-bottom: 2px solid rgb(99, 99, 99);
+  width: 15%;
+  margin: 0 auto 5px;
+}
+
+.best-seller-img {
+  width: 500px;
+  height: 300px;
+}
+
+.featured-container {
+  width: 426px;
+  height: 170px;
+  margin-left: -16px;
+}
+
+.featured-title {
+  color: #202020;
+  font-weight: bolder;
+  text-decoration: none !important;
+}
+
+.featured-img {
+  width: 421px;
+  height: 120px;
+}
+.featured-price {
+  margin-top: -15px !important;
+}
+
+.product-img {
+  width: 100px;
+  height: 200px;
+}
+
+.custom-card {
+  width: 100%;
+  height: auto;
+
+  border: 1px solid #ccc;
+  margin-top: 15px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.custom-card:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+  transform: scale(1.05);
+}
+.product-view-image {
+  margin-top: 20px;
+  height: 550px;
+  width: 867px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.product-view-image:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+  transform: scale(1.02);
+}
+
+.product-view-details {
+  margin-top: 130px;
+
+  height: 300px;
+  width: 425px;
+}
+.product-view-price {
+  font-size: 15px;
+  margin-top: -10px;
+  color: rgb(0, 0, 0);
+}
+
+.product-view-description {
+  font-size: 15px;
+
+  color: rgb(85, 85, 85);
+}
+
+.product-card {
+  margin-left: 7px;
+  margin-right: 7px;
+  width: 100%;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.product-card:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+  transform: scale(1.05);
+}
+
+.product-card-title {
+  color: #202020;
+  font-weight: bolder;
+  text-decoration: none !important;
+}
+
+.admin-img {
+  width: 100px;
+  height: 100px;
+}
+
+.cart-image {
+  width: 100px;
+  height: 90px;
+}
+
+.section2 {
+  margin-top: 39px;
+}
+
+.section-title {
+  margin-top: -10px;
+}
+.customer-service {
+  margin-left: -50px;
+}
+.section-cc {
+  border-bottom: 2px solid rgb(99, 99, 99);
+  width: 81%;
+}
+
+.section-newsletter {
+  border-bottom: 2px solid rgb(99, 99, 99);
+  width: 38%;
+  margin-bottom: 20px;
+}
+
+.cards-img {
+  background-image: url("https://permia-store-demo.myshopify.com/cdn/shop/files/pay_copyright.png?v=1675482889");
+  height: 30px;
+  width: 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+
+.register-container {
+  margin-top: 300px !important;
+}
+.register-form {
+  margin-top: 150px;
+}
+.register-form-control {
+  border-radius: 50px !important;
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+  font-size: 20px !important;
+  color: rgb(255, 255, 255) !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(10px) !important;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.register-form-control::placeholder {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.register-page {
+  background-image: url("https://images.pexels.com/photos/954405/pexels-photo-954405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+/* Login */
+.login-page {
+  background-image: url("https://images.pexels.com/photos/954405/pexels-photo-954405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.login-container {
+  height: 500px;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+.login-form {
+  padding: 20px;
+}
+.text {
+  color: rgb(231, 231, 231);
+}
+.text-register {
+  color: rgb(231, 231, 231);
+  margin-bottom: 30px;
+}
+
+.login-form-control {
+  border-radius: 50px !important;
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+  font-size: 20px !important;
+  color: rgb(255, 255, 255) !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.login-form-control::placeholder {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.register-form-button {
+  width: 100%;
+  border-radius: 50px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-size: 20px !important;
+  background-color: burlywood !important;
+  color: rgb(255, 255, 255) !important;
+  border-color: rgb(192, 155, 107) !important;
+}
+.login-button {
+  width: 100%;
+  border-radius: 50px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-size: 20px !important;
+  background-color: burlywood !important;
+  color: rgb(255, 255, 255) !important;
+  border-color: rgb(192, 155, 107) !important;
+}
+.register-button {
+  width: 100%;
+  border-radius: 50px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-size: 20px !important;
+  background-color: burlywood !important;
+  color: rgb(255, 255, 255) !important;
+  border-color: rgb(192, 155, 107) !important;
+  margin-bottom: 30px;
+  margin-top: -15px;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-top: 10px;
+  color: white;
+}
+
+.remember {
+  float: left;
+  margin-top: 10px;
+  color: white;
+}
+
+.sign-in-with {
+  margin-top: -20px;
+  color: rgb(231, 231, 231);
+}
+
+.sign-in-with-button {
+  margin-left: 3px;
+  margin-right: 3px;
+  width: 200px;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-size: 20px !important;
+  background-color: whitesmoke !important;
+  color: black !important;
+  border-color: rgb(117, 117, 117) !important;
+}
+
+.product-view-col1 {
+  background-color: rgb(255, 255, 255);
+  height: 90vh;
+}
+
+.product-view-col2 {
+  background-color: rgb(245, 245, 245);
+  height: 90vh;
+  right: 14px;
+}
+
+.product-view-button {
+  padding: 15px !important;
+  font-size: 17px !important;
+  background-color: rgb(209, 59, 209) !important;
+  border: rgb(209, 59, 209) !important;
+  color: white !important;
+  width: 100% !important;
+  margin-top: 2px !important;
+}
+.profile-view-button {
+  padding: 15px !important;
+  font-size: 17px !important;
+  background-color: rgb(209, 59, 209) !important;
+  border: rgb(209, 59, 209) !important;
+  color: white !important;
+  width: 93% !important;
+  margin-top: 2px !important;
+}
+
+.product-view-button-login {
+  padding: 15px !important;
+  font-size: 17px !important;
+  background-color: rgb(87, 23, 87) !important;
+  border: rgb(87, 23, 87) !important;
+  color: white !important;
+  width: 100% !important;
+  margin-top: 2px !important;
+}
+
+ul {
+  list-style-type: none;
+}
+.cart-col1 {
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+}
+
+.cart-col2 {
+  background-color: rgb(245, 245, 245);
+  height: 100vh;
+  right: 14px;
+}
+.input-remove-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-input {
+  width: 50px;
+}
+
+.short-input {
+  width: 100%;
+  text-align: center;
+}
+
+.remove-button-container {
+  flex-shrink: 0;
+}
+
+.remove-button {
+  width: 80px;
+  padding: 2px !important;
+}
+
+.quantity-button-add {
+  margin-left: 2px;
+  padding: 2px !important;
+}
+.quantity-button-minus {
+  margin-right: 2px;
+  padding: 2px !important;
+}
+
+.cart-description {
+  font-size: 11px;
+}
+
+.product-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.cart-total {
+  margin-top: 100px;
+}
+.cart-title {
+  font-weight: bolder;
+  margin-top: 20px;
+}
+.total-button {
+  padding: 15px;
+  font-size: 17px;
+  background-color: rgb(209, 59, 209);
+  border: rgb(209, 59, 209);
+  color: white;
+  width: 300px;
+  margin-top: 2px;
+}
+.total-container {
+  width: 400px;
+}
+
+.total-text {
+  font-size: 10px;
+  color: rgb(141, 141, 141);
+  margin-bottom: -0.1px;
+}
